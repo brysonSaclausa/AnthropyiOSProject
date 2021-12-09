@@ -11,7 +11,6 @@
 		7C2E3EFE27482F6E000EA9B5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2E3EFD27482F6E000EA9B5 /* ContentView.swift */; };
 		7C2E3F0027482F73000EA9B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C2E3EFF27482F73000EA9B5 /* Assets.xcassets */; };
 		7C2E3F0327482F73000EA9B5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C2E3F0227482F73000EA9B5 /* Preview Assets.xcassets */; };
-		7C2E3F0B27483DF9000EA9B5 /* InitialViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2E3F0A27483DF9000EA9B5 /* InitialViewTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,7 +20,6 @@
 		7C2E3EFF27482F73000EA9B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C2E3F0227482F73000EA9B5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7C2E3F09274832C7000EA9B5 /* AnthropySwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AnthropySwiftUI.entitlements; sourceTree = "<group>"; };
-		7C2E3F0A27483DF9000EA9B5 /* InitialViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +55,6 @@
 				7C2E3F09274832C7000EA9B5 /* AnthropySwiftUI.entitlements */,
 				7C2E3EFB27482F6E000EA9B5 /* AnthropySwiftUIApp.swift */,
 				7C2E3EFD27482F6E000EA9B5 /* ContentView.swift */,
-				7C2E3F0A27483DF9000EA9B5 /* InitialViewTest.swift */,
 				7C2E3EFF27482F73000EA9B5 /* Assets.xcassets */,
 				7C2E3F0127482F73000EA9B5 /* Preview Content */,
 			);
@@ -144,7 +141,6 @@
 			files = (
 				7C2E3EFE27482F6E000EA9B5 /* ContentView.swift in Sources */,
 				7C2E3EFC27482F6E000EA9B5 /* AnthropySwiftUIApp.swift in Sources */,
-				7C2E3F0B27483DF9000EA9B5 /* InitialViewTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
