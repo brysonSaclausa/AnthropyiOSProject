@@ -55,7 +55,7 @@ struct ContentView: View {
                 }
                 else {
                     //signed in show webapp
-                    InitialViewTest()
+                    InitialView()
                 }
                 
                 
