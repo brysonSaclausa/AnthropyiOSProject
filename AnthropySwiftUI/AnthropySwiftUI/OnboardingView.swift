@@ -50,8 +50,25 @@ struct OnboardingView: View {
                 
                 Spacer(minLength: 0)
             }
-            .background(.blue)
+            .background(Color("Color1").ignoresSafeArea())
         }
+        
+        .overlay(
+            
+            //Button...
+            Button(action: {
+                print("Go to step 2")
+            }, label: {
+                Image(systemName: "chevron.right")
+                    .font(.system(size: 20, weight: .semibold))
+                    .foregroundColor(.black)
+                    .frame(width: 60, height: 60)
+                    .background(Color.white)
+                    .clipShape(Circle())
+                    
+            })
+            ,alignment: .bottom
+        )
     }
 }
 
