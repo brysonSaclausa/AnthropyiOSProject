@@ -11,6 +11,7 @@
 		7C2E3EFE27482F6E000EA9B5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2E3EFD27482F6E000EA9B5 /* ContentView.swift */; };
 		7C2E3F0027482F73000EA9B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C2E3EFF27482F73000EA9B5 /* Assets.xcassets */; };
 		7C2E3F0327482F73000EA9B5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C2E3F0227482F73000EA9B5 /* Preview Assets.xcassets */; };
+		7CA33D1D277AD7CD005A70BC /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA33D1C277AD7CD005A70BC /* OnboardingView.swift */; };
 		7CD25C412762C1ED00239C62 /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD25C402762C1ED00239C62 /* InitialView.swift */; };
 /* End PBXBuildFile section */
 
@@ -21,6 +22,7 @@
 		7C2E3EFF27482F73000EA9B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C2E3F0227482F73000EA9B5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7C2E3F09274832C7000EA9B5 /* AnthropySwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AnthropySwiftUI.entitlements; sourceTree = "<group>"; };
+		7CA33D1C277AD7CD005A70BC /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		7CD25C402762C1ED00239C62 /* InitialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -57,6 +59,7 @@
 				7C2E3F09274832C7000EA9B5 /* AnthropySwiftUI.entitlements */,
 				7C2E3EFB27482F6E000EA9B5 /* AnthropySwiftUIApp.swift */,
 				7C2E3EFD27482F6E000EA9B5 /* ContentView.swift */,
+				7CA33D1C277AD7CD005A70BC /* OnboardingView.swift */,
 				7CD25C402762C1ED00239C62 /* InitialView.swift */,
 				7C2E3EFF27482F73000EA9B5 /* Assets.xcassets */,
 				7C2E3F0127482F73000EA9B5 /* Preview Content */,
@@ -143,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CD25C412762C1ED00239C62 /* InitialView.swift in Sources */,
+				7CA33D1D277AD7CD005A70BC /* OnboardingView.swift in Sources */,
 				7C2E3EFE27482F6E000EA9B5 /* ContentView.swift in Sources */,
 				7C2E3EFC27482F6E000EA9B5 /* AnthropySwiftUIApp.swift in Sources */,
 			);
