@@ -8,12 +8,32 @@
 import SwiftUI
 
 struct OnboardingView: View {
+    
+    @AppStorage("currentPage") var currentPage = 1
+    
     var body: some View {
-        
+//        if currentPage > totalPages {
+//            OnboardingView()
+//        }
+//        else {
+//            OnboardingView()
+//        }
         // For Slide Animation
         
         ZStack {
-            ScreenView()
+            
+            //Changing between views...
+            if currentPage == 1 {
+                ScreenView(image: "image1", title: "Step 1", detail: "", bgColor: Color("Color1"))
+            }
+            if currentPage == 2 {
+                ScreenView(image: "image2", title: "Step 2", detail: "", bgColor: Color("Color2"))
+            }
+            if currentPage == 3 {
+                ScreenView(image: "image3", title: "Step 3", detail: "", bgColor: Color("Color3"))
+            }
+            
+            
         }
         
         .overlay(
@@ -21,6 +41,18 @@ struct OnboardingView: View {
             //Button...
             Button(action: {
                 print("Go to step 2")
+                //changing views
+                withAnimation(.easeInOut) {
+                    //checking..
+                    if currentPage <= totalPages {
+                        currentPage += 1
+                    }
+                    else {
+                        currentPage = 1
+                    }
+                }
+                
+                //checking..
             }, label: {
                 Image(systemName: "chevron.right")
                     .font(.system(size: 20, weight: .semibold))
@@ -58,17 +90,44 @@ struct OnboardingView_Previews: PreviewProvider {
 }
 
 struct ScreenView: View {
+    
+    var image: String
+    var title: String
+    var detail: String
+    var bgColor: Color
+    
+    @AppStorage("currentPage") var currentPage = 1
+    
     var body: some View {
         VStack(spacing: 20) {
             HStack {
-                Text("Hello Member!")
-                    .font(.title)
-                    .fontWeight(.semibold)
-                // Letter Spacing..
-                    .kerning(1.4)
+                
+                //Showing it only for first page...
+                if currentPage == 1 {
+                    Text("Hello Member!")
+                        .font(.title)
+                        .fontWeight(.semibold)
+                    // Letter Spacing..
+                        .kerning(1.4)
+                }
+                else {
+                    Button(action: {}, label:  {
+                        
+                        Image(systemName: "chevron.left")
+                            .foregroundColor(.white)
+                            .padding(.vertical, 10)
+                            .padding(.horizontal)
+                            .background(Color.black.opacity(0.4))
+                            .cornerRadius(10)
+                            
+                    })
+                }
+                
                 Spacer()
                 
-                Button(action: {}, label: {
+                Button(action: {
+                    
+                }, label: {
                     Text("Skip")
                         .fontWeight(.semibold)
                         .kerning(1.2)
@@ -80,10 +139,11 @@ struct ScreenView: View {
             Spacer(minLength: 0)
             
             //IMAGE 1...
-            //                Image("imageNmae")
-            //                    .resizable()
-            //                    .aspectRatio(contentMode: .fit)
-            Text("Step 1")
+            Image(image)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                                
+            Text(title)
                 .font(.title)
                 .fontWeight(.bold)
                 .foregroundColor(.black)
@@ -98,6 +158,8 @@ struct ScreenView: View {
             
             Spacer(minLength: 100)
         }
-        .background(Color("Color1").ignoresSafeArea())
+        .background(bgColor.ignoresSafeArea())
     }
 }
+
+var totalPages = 3
