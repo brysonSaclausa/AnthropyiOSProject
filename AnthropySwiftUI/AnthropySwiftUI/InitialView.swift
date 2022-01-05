@@ -8,8 +8,15 @@
 import SwiftUI
 
 struct InitialView: View {
+    
+    @State var selected = 1
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Picker(selection: $selected, label: Text("Picker"), content: {
+            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/).tag(1)
+            Text("Goodbye world").tag(2)
+        })
+            .pickerStyle(SegmentedPickerStyle())
     }
 }
 
